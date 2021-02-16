@@ -21,6 +21,12 @@ class SineWave(Fmi2Slave):
 
         self.register_variable(Real("output", causality=Fmi2Causality.output))
 
+    def update_output(self, t: float):
+        self.output = self.A * math.sin(TWO_PHI * t + self.phi)
+
+    def exit_initialization_mode(self):
+        self.update_output(0)
+
     def do_step(self, current_time: float, step_size: float) -> bool:
-        self.output = self.A * math.sin(TWO_PHI * current_time + self.phi)
+        self.update_output(current_time)
         return True
