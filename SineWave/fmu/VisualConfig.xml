@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vico:VisualConfig xmlns:vico="http://github.com/NTNU-IHB/Vico/schema/VisualConfig" decimationFactor="1">
+
+    <vico:CameraConfig>
+        <vico:initialPosition px="0" py="0" pz="-7.5"/>
+    </vico:CameraConfig>
+
+    <vico:Transform name="SineWave">
+        <vico:Geometry>
+            <vico:Shape>
+                <vico:Sphere radius="0.5"/>
+            </vico:Shape>
+        </vico:Geometry>
+        <vico:PositionRef>
+            <vico:yRef name="output"/>
+        </vico:PositionRef>
+    </vico:Transform>
+	
+	<vico:Transform name="Plane">
+        <vico:Geometry color="white">
+            <vico:OffsetPosition py="-1.5"/>
+            <vico:Shape>
+                <vico:Box xExtent="5" yExtent="5" zExtent="0.1"/>
+            </vico:Shape>
+        </vico:Geometry>
+    </vico:Transform>
+
+</vico:VisualConfig>

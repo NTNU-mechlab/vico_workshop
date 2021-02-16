@@ -5,3 +5,5 @@ SineWave/*.fmu
 *.ssp
 
 hs_err_pid*
+
+.kts
