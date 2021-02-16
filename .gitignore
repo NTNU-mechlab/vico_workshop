@@ -7,3 +7,5 @@ SineWave/*.fmu
 hs_err_pid*
 
 .kts
+
+log.out

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vico:LogConfig xmlns:vico="http://github.com/NTNU-IHB/Vico/schema/LogConfig" staticFileNames="true">
+
+    <vico:components>
+        <vico:component name="vesselModel">
+            <vico:variable name="cgShipMotion.nedDisplacement.north"/>
+            <vico:variable name="cgShipMotion.nedDisplacement.east"/>
+            <vico:variable name="cgShipMotion.nedDisplacement.down"/>
+            <vico:variable name="cgShipMotion.linearVelocity.surge"/>
+            <vico:variable name="cgShipMotion.linearVelocity.sway"/>
+            <vico:variable name="cgShipMotion.angularVelocity.yaw"/>
+            <vico:variable name="cgShipMotion.angularDisplacement.yaw"/>
+        </vico:component>
+        <vico:component name="azimuth0">
+            <vico:variable name="output_torque"/>
+            <vico:variable name="output_force_surge"/>
+            <vico:variable name="output_force_sway"/>
+        </vico:component>
+        <vico:component name="zigzagController">
+            <vico:variable name="rpmCommand"/>
+            <vico:variable name="rudderCommand"/>
+        </vico:component>
+
+    </vico:components>
+
+</vico:LogConfig>
