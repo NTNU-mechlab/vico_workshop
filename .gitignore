@@ -1,5 +1,7 @@
-results/*.csv
+/**/results/*.csv
 
 SineWave/*.fmu
+
+*.ssp
 
 hs_err_pid*
