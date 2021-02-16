@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vico:ChartConfig xmlns:vico="http://github.com/NTNU-IHB/Vico/schema/ChartConfig">
+
+    <vico:chart>
+        <vico:timeseries title="SineWave" label="Height[m]" live="true">
+            <vico:series>
+                <vico:component name="SineWave">
+                    <vico:variable name="output"/>
+                </vico:component>
+            </vico:series>
+        </vico:timeseries>
+    </vico:chart>
+
+</vico:ChartConfig>
