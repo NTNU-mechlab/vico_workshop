@@ -4,5 +4,4 @@ vico simulate-fmu \
 -stop 20 \
 -s scenario.main.kts \
 -chart ChartConfig.xml \
--visual VisualConfig.xml \
 SineWave.fmu
